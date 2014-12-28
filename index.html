@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+  
+    <title>Home - Simón Rodriguez</title>
+     <meta name="description" content="home institucion educativa distrital Simon Rodriguez" />
+     <link rel="stylesheet" href="css/normalize.css"/> 
+    <!-- bjqs.css contains the *essential* css needed for the slider to work -->
+    <link rel="stylesheet" href="bjqs.css">
+
+    <!-- some pretty fonts for this demo page - not required for the slider -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300' rel='stylesheet' type='text/css'> 
+
+    <!-- demo.css contains additional styles used to set up this demo page - not required for the slider --> 
+    <link rel="stylesheet" href="demo.css">
+
+    <!-- load jQuery and the plugin -->
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="js/bjqs-1.3.min.js"></script>
+      
+  </head>
+  
+  <body>
+  
+    <div id="container">
+    <header>
+      <figure>
+          <img src="img/logo.jpg" />
+      </figure>
+      <h1>Colegio Simón Rodriguez</h1>
+      <h2>educamos por un mañana mejor</h2>
+
+      <nav>
+        <ul>
+          <li> <a href="#">Inicio</a></li>
+          <li> <a href="#">Quienes somos</a> </li>
+          <li> <a href="#">Misión</a> </li>
+          <li> <a href="#">Visión</a> </li>
+          <li> <a href="#">Docentes</a> </li>
+        </ul>
+      </nav>
+      
+    </header>
+    
+      
+
+      <!--  Outer wrapper for presentation only, this can be anything you like -->
+      <div id="banner-slide">
+
+        <!-- start Basic Jquery Slider -->
+        <ul class="bjqs">
+          <li><a href=""><img src="img/banner01.jpg" title="Automatically generated caption"></a></li>
+          <li><img src="img/banner02.jpg" title="Automatically generated caption"></li>
+          <li><img src="img/banner03.jpg" title="Automatically generated caption"></li>
+        </ul>
+        <!-- end Basic jQuery Slider -->
+
+      </div>
+      <!-- End outer wrapper -->
+      
+      <!-- attach the plug-in to the slider parent element and adjust the settings as required -->
+      <script class="secret-source">
+        jQuery(document).ready(function($) {
+          
+          $('#banner-slide').bjqs({
+            animtype      : 'slide',
+            height        : 320,
+            width         : 1010,
+            responsive    : true,
+            randomstart   : true
+          });
+          
+        });
+      </script>
+
+    </div>
+
+    <section>
+    <article>
+      <h2>Historia de nuestra institución</h2>
+        <p> La institución educativa Simon bolivar nacio en el año xxxxx con el ideal de promover todas las virtudes necesarias en los estudiantes con el fin de logran personas...
+          
+        </p>
+    </article>
+    <article>
+      <h2>Conoce nuestra institución</h2>
+        <p> La institución educativa Simon bolivar nacio en el año xxxxx con el ideal de promover todas las virtudes necesarias en los estudiantes con el fin de logran personas...
+          
+        </p>
+    </article>
+    <article>
+      <h2>Nuestros docentes</h2>
+        <p> La institución educativa Simon bolivar nacio en el año xxxxx con el ideal de promover todas las virtudes necesarias en los estudiantes con el fin de logran personas...
+          
+        </p>
+    </article>
+    
+  </section>
+  <aside>
+    <article>
+      <h3>Nuestras noticias educativas</h3>
+      <p> La institución educativa Simon bolivar nacio en el año xxxxx con el ideal de promover todas las virtudes necesarias en los estudiantes con el fin de logran personas...
+          
+        </p>
+    </article>
+    
+  </aside>
+
+  <footer>
+    <p> Todos los derechos reservados copyright</p>
+    <p> Colegio Simon Rodriguez </p>
+    <p> Desarrollado por cima s.a. </p>
+    
+  </footer>
+
+    <script>
+    jQuery(function($) {
+
+        $('.secret-source').secretSource({
+            includeTag: false
+        });
+
+    });
+    </script>
+
+  </body>
+</html>
